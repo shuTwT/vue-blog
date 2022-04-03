@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px
+}
+/*定义滚动条轨道*/ 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em
+}
+/*定义滑块 内阴影+圆角*/ 
+::-webkit-scrollbar-thumb {
+    background-color: #d6681e;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em
+}
+/*包含以下四种的链接*/
+a {
+    text-decoration: none;
+}
+
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
