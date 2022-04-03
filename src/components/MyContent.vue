@@ -1,10 +1,6 @@
 <template>
  <div class="content">
-      <div class="content-inner">
-        <div id="cardbox-home"
-             class="row row-cols-3"></div>
-
-      </div>
+     
     </div>
 </template>
 
