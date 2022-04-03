@@ -1,18 +1,21 @@
 <template>
   <MyHeader></MyHeader>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MyMain></MyMain>
+  <MySidebar></MySidebar>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MyHeader from './pages/MyHeader.vue'
+import MyHeader from './components/MyHeader.vue'
+import MyMain from './components/MyMain.vue'
+import MySidebar from './components/MySidebar.vue'
 
 export default {
   name: 'App',
   components: {
-      MyHeader,
-    HelloWorld
-  }
+    MyHeader,
+    MyMain,
+    MySidebar,
+  },
 }
 </script>
 
@@ -23,6 +26,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 8px;
+  border-radius: 40px;
+  background: #ffffff;
+  display: flex;
 }
 </style>
