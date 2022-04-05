@@ -1,25 +1,8 @@
 <template>
-  <div >
-    <div >
-      <MyHeader></MyHeader>
-      <MyContent></MyContent>
-      <MyFooter></MyFooter>
-    </div>
-    <VueParticles color="#39AFFD"
-                  :particleOpacity="0.7"
-                  :particlesNumber="100"
-                  shapeType="circle"
-                  :particleSize="4"
-                  linesColor="#8DD1FE"
-                  :linesWidth="1"
-                  :lineLinked="true"
-                  :lineOpacity="0.4"
-                  :linesDistance="150"
-                  :moveSpeed="3"
-                  :hoverEffect="true"
-                  hoverMode="grab"
-                  :clickEffect="false"
-                  clickMode="push"></VueParticles>
+  <div>
+    <MyHeader></MyHeader>
+    <MyContent></MyContent>
+    <MyFooter></MyFooter>
   </div>
 </template>
 
@@ -27,7 +10,6 @@
 import MyHeader from './components/MyHeader.vue'
 import MyContent from './components/MyContent.vue'
 import MyFooter from './components/MyFooter.vue'
-import VueParticles from '../node_modules/vue-particles/src/vue-particles/vue-particles.vue'
 
 export default {
   name: 'App',
@@ -35,7 +17,6 @@ export default {
     MyHeader,
     MyContent,
     MyFooter,
-    VueParticles,
   },
 }
 </script>
