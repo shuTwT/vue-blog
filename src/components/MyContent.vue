@@ -1,13 +1,16 @@
 <template>
  <div class="content">
-     
+     <HomePage></HomePage>
     </div>
 </template>
 
 <script>
+import HomePage from "../pages/HomePage.vue";
+
     export default {
-        name:'MyContent'
-    }
+    name: "MyContent",
+    components: { HomePage }
+}
 </script>
 
 <style>
