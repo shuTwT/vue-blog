@@ -1,16 +1,16 @@
 <template>
 <div id="nav">
-      <div id="nav-header">
+      <div id="nav-header" >
         <div id="nav-menu"
-             class="row">
-          <div class="col-md-3 hidden-sm hidden-xs"
-               style="cursor: pointer;">首页</div>
-          <div class="col-md-3 hidden-sm hidden-xs"
-               style="cursor: pointer;">归档</div>
-          <div class="col-md-3 hidden-sm hidden-xs"
-               style="cursor: pointer;">留言</div>
-          <div class="col-md-3 hidden-sm hidden-xs"
-               style="cursor: pointer;">友链</div>
+             class="row" >
+          <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"
+               style="cursor: pointer;" to="/home"><p>首页</p></router-link>
+          <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"
+               style="cursor: pointer;" to="/file">归档</router-link>
+          <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"
+               style="cursor: pointer;" to="/word">留言</router-link>
+          <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"
+               style="cursor: pointer;" to="/link">友链</router-link>
         </div>
       </div>
     </div>

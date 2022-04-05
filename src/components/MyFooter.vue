@@ -20,7 +20,7 @@
           </div>
           <div id="credit">
             <p>备案号 <a href="http://wordpress.org"
-                 rel="nofollow">WordPress</a>. </p>
+                 rel="nofollow">123456</a>. </p>
           </div>
         </div>
         <div class="grid one-full">
@@ -39,6 +39,7 @@ export default {
 
 <style>
 #footer{
+    background-color: aliceblue;
     color: #8191a9;
     position: relative;
     padding-bottom: 30px;

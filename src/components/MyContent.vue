@@ -1,20 +1,20 @@
 <template>
- <div class="content">
-     <HomePage></HomePage>
+ <div id="content" class="container">
+     <router-view></router-view>
     </div>
 </template>
 
 <script>
-import HomePage from "../pages/HomePage.vue";
+
 
     export default {
     name: "MyContent",
-    components: { HomePage }
+    components: { }
 }
 </script>
 
 <style>
-.content {
+#content {
   background: #edf0f5;
   border-radius: 10px;
   overflow: hidden;

@@ -1,20 +1,41 @@
 <template>
-  <MyHeader></MyHeader>
-  <MyMain></MyMain>
-  <MySidebar></MySidebar>
+  <div >
+    <div >
+      <MyHeader></MyHeader>
+      <MyContent></MyContent>
+      <MyFooter></MyFooter>
+    </div>
+    <VueParticles color="#39AFFD"
+                  :particleOpacity="0.7"
+                  :particlesNumber="100"
+                  shapeType="circle"
+                  :particleSize="4"
+                  linesColor="#8DD1FE"
+                  :linesWidth="1"
+                  :lineLinked="true"
+                  :lineOpacity="0.4"
+                  :linesDistance="150"
+                  :moveSpeed="3"
+                  :hoverEffect="true"
+                  hoverMode="grab"
+                  :clickEffect="false"
+                  clickMode="push"></VueParticles>
+  </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
-import MyMain from './components/MyMain.vue'
-import MySidebar from './components/MySidebar.vue'
+import MyContent from './components/MyContent.vue'
+import MyFooter from './components/MyFooter.vue'
+import VueParticles from '../node_modules/vue-particles/src/vue-particles/vue-particles.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    MyMain,
-    MySidebar,
+    MyContent,
+    MyFooter,
+    VueParticles,
   },
 }
 </script>
@@ -29,6 +50,20 @@ export default {
   margin: 8px;
   border-radius: 40px;
   background: #ffffff;
-  display: flex;
+}
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+#app {
+  background-image: url(./assets/bg.jpg) !important;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 </style>
