@@ -3,6 +3,7 @@ import HomePage from '../pages/HomePage.vue'
 import FilePage from '../pages/FilePage.vue'
 import LinkPage from '../pages/LinkPage.vue'
 import WordPage from '../pages/WordPage.vue'
+import MyArticle from '../pages/MyArticle.vue'
 
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         path: '/word',
         name: 'word',
         component: WordPage
+    },
+    {
+        path: '/article',
+        name: 'article',
+        component: MyArticle
     }
 
 ]
