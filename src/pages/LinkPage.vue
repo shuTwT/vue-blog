@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="html-main">
-      <div class="card link-card"></div>
+      <div class="card link-main"></div>
       <div class="sidebar">
         <div class="card searchcard aside-box">
           <div class="input-group mb-3">

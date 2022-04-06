@@ -47,4 +47,8 @@ body,
   background-attachment: fixed;
   background-size: cover;
 }
+.sidebar{
+    margin:2px;
+    padding: 2px;
+}
 </style>

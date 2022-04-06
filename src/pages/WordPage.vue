@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="html-main">
-      <div class="card word-main"></div>
+      <div class="card word-main">
+        <div class="card wordcard"></div>
+        <commentcard>
+          <MyValine></MyValine>
+        </commentcard>
+      </div>
       <div class="sidebar">
         <div class="card searchcard aside-box">
           <div class="input-group mb-3">
@@ -59,8 +64,11 @@
 </template>
 
 <script>
+import MyValine from '@/components/MyValine.vue'
+
 export default {
   name: 'WordPage',
+  components: { MyValine },
 }
 </script>
 
@@ -152,5 +160,9 @@ export default {
   border: var(--border-box);
   border-radius: var(--border-hd);
   margin-bottom: 10px;
+}
+.word-main{
+    margin-right:10px;
+    padding-right: 10px;
 }
 </style>
