@@ -4,7 +4,7 @@
         <div id="nav-menu"
              class="row" >
           <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"
-               style="cursor: pointer;" to="/home"><p>首页</p></router-link>
+               style="cursor: pointer;" to="/"><p>首页</p></router-link>
           <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"
                style="cursor: pointer;" to="/file">归档</router-link>
           <router-link class="col-md-3 hidden-sm hidden-xs" active-class="active"

@@ -44,6 +44,7 @@ export default {
     position: relative;
     padding-bottom: 30px;
     margin-top: 30px;
+    
 }
 #footer-bottom{
     position: relative;

@@ -5,8 +5,6 @@
 </template>
 
 <script>
-
-
     export default {
     name: "MyContent",
     components: { }
@@ -18,5 +16,6 @@
   background: #edf0f5;
   border-radius: 10px;
   overflow: hidden;
+  
 }
 </style>

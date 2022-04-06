@@ -10,11 +10,7 @@ const routes = [
         name: 'home',
         component: HomePage
     },
-    {
-        path: '/home',
-        name: 'home',
-        component: HomePage
-    },
+    
     {
         path: '/file',
         name: 'file',

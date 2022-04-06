@@ -16,8 +16,8 @@
           <div class="input-group mb-3">
             <input type="text"
                    class="form-control inputcard"
-                   placeholder="Recipient's username"
-                   aria-label="Recipient's username"
+                   placeholder="input value"
+                   aria-label="input value"
                    aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary"
                     type="button"
@@ -65,6 +65,7 @@
       </div>
     </div>
     <div class="card linkcard">
+        <strong>友情链接</strong>
       <li><a href="https://creepzzl.top"
            rel="noopener"
            title="帕秋莉go"
