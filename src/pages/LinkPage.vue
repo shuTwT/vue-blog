@@ -1,7 +1,22 @@
 <template>
   <div>
     <div class="html-main">
-      <div class="card link-main"></div>
+      <div class="card link-main">
+        <h2>友情链接</h2>
+        <div>1.内容遵守中华人民共和国法律法规。<br>
+          2.非商业性质网站<br>
+          3.网站创造高品质的内容，能为用户提供独特的价值<br>
+          5.网站有良好的浏览体验,境内加载需在8秒内完成<br>
+          6.不接受免费域名及二级域名如github.io<br>
+          7.站点已启用有效的https<br></div>
+        <li><a href="https://creepzzl.top"
+             rel="noopener"
+             title="帕秋莉go"
+             target="_blank"><img class="frinds-links-icon img-lazyload"
+                 src="https://creepzzl.top/CreepZz.ico"
+                 data-original="https://creepzzl.top/favicon.ico"
+                 onerror="javascript:this.src='https://www.frostfox.cn/wp-content/themes/CorePress-Pro/static/img/chrome.png'"> CreepZzl - Blog</a></li>
+      </div>
       <div class="sidebar">
         <div class="card searchcard aside-box">
           <div class="input-group mb-3">
@@ -52,6 +67,12 @@
         </div>
         <div class="card weathercard aside-box">
           <h2>实时天气</h2>
+          <iframe allowtransparency="true"
+                  frameborder="0"
+                  width="385"
+                  height="96"
+                  scrolling="no"
+                  src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=0&v=0&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=385&h=96&align=center"></iframe>
         </div>
       </div>
     </div>

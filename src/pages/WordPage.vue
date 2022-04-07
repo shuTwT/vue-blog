@@ -57,6 +57,12 @@
         </div>
         <div class="card weathercard aside-box">
           <h2>实时天气</h2>
+          <iframe allowtransparency="true"
+                  frameborder="0"
+                  width="385"
+                  height="96"
+                  scrolling="no"
+                  src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=0&v=0&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=385&h=96&align=center"></iframe>
         </div>
       </div>
     </div>
@@ -161,8 +167,8 @@ export default {
   border-radius: var(--border-hd);
   margin-bottom: 10px;
 }
-.word-main{
-    margin-right:10px;
-    padding-right: 10px;
+.word-main {
+  margin-right: 10px;
+  padding-right: 10px;
 }
 </style>
