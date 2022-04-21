@@ -24,7 +24,7 @@
 
 <style>
 #nav{
-    background: #e0f4f1;
+    background: rgb(255, 255, 255);
     font-size: 17px;
     font-weight: 400;
     float: none;
