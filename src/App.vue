@@ -42,7 +42,7 @@ export default {
 html,
 body,
 #app {
-  background-image: url(./assets/bg.jpg) !important;
+  background-image: url(https://s3.bmp.ovh/imgs/2022/04/22/9cb5138e00bf0b53.jpg) !important;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;

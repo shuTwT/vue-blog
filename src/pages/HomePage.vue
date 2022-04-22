@@ -28,10 +28,10 @@
           <div class="widget-admin-author-plane">
             <div class="widget-admin-author-background_image"
                  style="">
-              <img src="../assets/bg.jpg">
+              <img src="https://s3.bmp.ovh/imgs/2022/04/22/9cb5138e00bf0b53.jpg">
             </div>
             <div class="widget-admin-author-avatar">
-              <img src="../assets/g.jpg">
+              <img src="https://s3.bmp.ovh/imgs/2022/04/22/734350d895796c5a.jpg">
             </div>
             <div class="widget-admin-author-name">
               高级长官毓 </div>

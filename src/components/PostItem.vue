@@ -3,8 +3,8 @@
     <div class="post-item-container">
       <div class="post-item-thumbnail">
         <a href="#"
-           target="_blank"><img src="../assets/kq1.jpg"
-               data-original="../assets/kq1.jpg"
+           target="_blank"><img src="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
+               data-original="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
                class="thumbnail"
                width="480"
                height="300"
@@ -28,7 +28,7 @@
             <div class="post-item-meta-item">
               <span class="post-item-meta-author">
                 <img alt=""
-                     src="../assets/g.jpg"
+                     src="https://s3.bmp.ovh/imgs/2022/04/22/734350d895796c5a.jpg"
                      class="post-item-avatar">{{postData.author}} </span>
               <span class="post-item-time">{{postData.time}}</span>
             </div>
