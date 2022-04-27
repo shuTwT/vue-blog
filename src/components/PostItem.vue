@@ -18,10 +18,10 @@
         <h2>
           <a href="#"
              target="_blank"
-             style="">{{postData.title}}</a>
+             style="">{{title}}</a>
         </h2>
         <div class="post-item-content">
-          {{postData.description}}
+          {{description}}
         </div>
         <div class="post-item-info">
           <div class="post-item-meta">
@@ -43,9 +43,7 @@
 
 export default {
   name: 'PostItem',
-  props: {
-
-  },
+  props:  ['title','image','description','author','time'],
   data() {
     return {
         postData:{

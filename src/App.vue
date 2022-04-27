@@ -19,6 +19,7 @@ export default {
     MyFooter,
   },
 }
+
 </script>
 
 <style>

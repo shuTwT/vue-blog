@@ -4,24 +4,20 @@
       <div class="card post-main">
         <h3>最新文章</h3>
         <ul class="post-list">
-          <post-item></post-item>
-          <post-item></post-item>
-          <post-item></post-item>
-          <post-item></post-item>
-          <post-item></post-item>
+          <post-item v-for="(item, index) in listdata"
+                     :key="index"
+                     :title="item.title"
+                     :description="item.description">
+
+          </post-item>
         </ul>
       </div>
       <div class="sidebar">
         <div class="card searchcard aside-box">
-          <div class="input-group mb-3">
-            <input type="text"
-                   class="form-control inputcard"
-                   placeholder="input value"
-                   aria-label="input value"
-                   aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary"
-                    type="button"
-                    id="button-addon2">搜索</button>
+          <div class="inputgroup aside-box">
+            <button class="searchbox">
+              <span>Search</span>
+            </button>
           </div>
         </div>
         <div class="card usercard">
@@ -61,12 +57,6 @@
         </div>
         <div class="card weathercard aside-box">
           <h2>实时天气</h2>
-          <iframe allowtransparency="true"
-                  frameborder="0"
-                  width="385"
-                  height="96"
-                  scrolling="no"
-                  src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=0&v=0&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=385&h=96&align=center"></iframe>
         </div>
       </div>
     </div>
@@ -85,11 +75,37 @@
 
 <script>
 import PostItem from '@/components/PostItem.vue'
+import axios from 'axios'
 export default {
   components: { PostItem },
   name: 'HomePage',
   comments: {},
+  methods: {
+    getArticles() {
+      axios
+        .get('/article.json')
+        .then((response) => {
+          for (var i = 0; i < 3; i++) {
+            this.listdata[i] = response.data.data[i]
+          }
+          console.log(this.listdata)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    },
+  },
+  mounted() {},
+  created() {
+    //页面渲染之前执行，调用定义的方法
+    this.getArticles()
+  },
   data() {
+    return {
+      listdata: [],
+    }
+  },
+  setup() {
     return {}
   },
 }
@@ -186,5 +202,22 @@ export default {
   border: var(--border-box);
   border-radius: var(--border-hd);
   margin-bottom: 10px;
+}
+.inputgroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbox {
+  display: flex;
+  height: 27px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbox:hover {
+  background-color: skyblue;
+  border: 1px solid black;
 }
 </style>

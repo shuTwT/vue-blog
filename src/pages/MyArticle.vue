@@ -81,7 +81,6 @@ export default {
 <style >
 .html-main {
   display: flex;
-  min-height: 100vh;
 }
 .article-main {
   order: 1;
