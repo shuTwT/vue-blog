@@ -11,14 +11,7 @@
         <div class="sidebar">
           <div class="card searchcard aside-box">
             <div class="input-group mb-3">
-              <input type="text"
-                     class="form-control inputcard"
-                     placeholder="input value"
-                     aria-label="input value"
-                     aria-describedby="button-addon2">
-              <button class="btn btn-outline-secondary"
-                      type="button"
-                      id="button-addon2">搜索</button>
+              <search-button></search-button>
             </div>
           </div>
 
@@ -32,7 +25,7 @@
 import { ref, reactive } from 'vue'
 import VueMarkdownIt from 'vue3-markdown-it'
 import '../highlight.js/styles/monokai.css'
-
+import SearchButton from '@/components/SearchButton.vue'
 import MarkdownItEmoji from 'markdown-it-emoji'
 import MarkdownItDeflist from 'markdown-it-deflist'
 import MarkdownItSub from 'markdown-it-sub'
@@ -42,6 +35,7 @@ export default {
   name: 'MyArticle',
   components: {
     VueMarkdownIt,
+    SearchButton
   },
   setup() {
     let textarea = ref(`# Hello，World！
@@ -78,7 +72,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 .html-main {
   display: flex;
 }

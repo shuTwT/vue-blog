@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 ::-webkit-scrollbar {
     width: 9px;
     height: 9px
@@ -64,4 +69,15 @@ button {
     margin: 0 0 0 16px;
     padding: 0 8px;
     user-select: none;
+}
+.card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    margin-left: 18px;
+    vertical-align: top;
+    display: flex;
+}
+.container{
+    background: #edf0f5;
 }

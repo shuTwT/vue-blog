@@ -15,9 +15,7 @@
       <div class="sidebar">
         <div class="card searchcard aside-box">
           <div class="inputgroup aside-box">
-            <button class="searchbox">
-              <span>Search</span>
-            </button>
+            <search-button></search-button>
           </div>
         </div>
         <div class="card usercard">
@@ -76,8 +74,9 @@
 <script>
 import PostItem from '@/components/PostItem.vue'
 import axios from 'axios'
+import SearchButton from '@/components/SearchButton.vue'
 export default {
-  components: { PostItem },
+  components: { PostItem, SearchButton },
   name: 'HomePage',
   comments: {},
   methods: {
@@ -111,7 +110,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.linkcard{
+    width: 1400px;
+}
 .linkcard img {
   max-width: 20px !important;
 }
@@ -208,16 +210,5 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.searchbox {
-  display: flex;
-  height: 27px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.searchbox:hover {
-  background-color: skyblue;
-  border: 1px solid black;
-}
+
 </style>

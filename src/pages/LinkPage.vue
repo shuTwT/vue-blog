@@ -2,7 +2,7 @@
   <div>
     <div class="html-main">
       <div class="card link-main">
-        <h2>友情链接</h2>
+        <h2 style="">友情链接</h2>
         <div>1.内容遵守中华人民共和国法律法规。<br>
           2.非商业性质网站<br>
           3.网站创造高品质的内容，能为用户提供独特的价值<br>
@@ -20,9 +20,7 @@
       <div class="sidebar">
         <div class="card searchcard aside-box">
           <div class="inputgroup aside-box">
-            <button class="searchbox">
-              <span>Search</span>
-            </button>
+            <search-button></search-button>
           </div>
         </div>
         <div class="card usercard">
@@ -69,12 +67,14 @@
 </template>
 
 <script>
+import SearchButton from '@/components/SearchButton.vue'
 export default {
   name: 'LinkPage',
+  components:{SearchButton}
 }
 </script>
 
-<style>
+<style scoped>
 .html-main {
   display: flex;
 }
@@ -167,17 +167,5 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.searchbox {
-  display: flex;
-  height: 27px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.searchbox:hover {
-  background-color: skyblue;
-  border: 1px solid black;
 }
 </style>

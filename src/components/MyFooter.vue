@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #footer{
     background-color: aliceblue;
     color: #8191a9;

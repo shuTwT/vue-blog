@@ -2,13 +2,13 @@
   <li class="post-item ">
     <div class="post-item-container">
       <div class="post-item-thumbnail">
-        <a href="#"
+        <router-link to="/article"
            target="_blank"><img src="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
                data-original="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
                class="thumbnail"
                width="480"
                height="300"
-               style=""></a>
+               style=""></router-link>
       </div>
       <div class="post-item-tags">
         <span class="cat-item"><a target="_blank"
@@ -58,7 +58,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 .post-item {
     overflow: hidden;
     background: #fff;

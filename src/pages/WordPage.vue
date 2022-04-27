@@ -10,9 +10,7 @@
       <div class="sidebar">
         <div class="card searchcard aside-box">
           <div class="inputgroup aside-box">
-            <button class="searchbox">
-              <span>Search</span>
-            </button>
+            <search-button></search-button>
           </div>
         </div>
         <div class="card usercard">
@@ -58,16 +56,17 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import MyValine from '@/components/MyValine.vue'
+import SearchButton from '@/components/SearchButton.vue'
 
 export default {
   name: 'WordPage',
-  components: { MyValine },
+  components: { MyValine, SearchButton},
 }
 </script>
 
-<style>
+<style scoped>
 .html-main {
   display: flex;
 }
@@ -164,17 +163,5 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.searchbox {
-  display: flex;
-  height: 27px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.searchbox:hover {
-  background-color: skyblue;
-  border: 1px solid black;
 }
 </style>

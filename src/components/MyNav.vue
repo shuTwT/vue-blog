@@ -22,7 +22,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 #nav{
     background: rgb(255, 255, 255);
     font-size: 17px;

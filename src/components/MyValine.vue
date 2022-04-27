@@ -7,16 +7,24 @@
 <script>
 export default {
   name: 'MyValine',
+  setup() {
+      let Valine=''
+      return{
+          Valine
+      }
+  },
   data(){
       return{
-          Valine:''
+          
       }
   },
   mounted() {
+
     import('valine').then(res => {
       this.Valine = res.default;
       this.init()
     })
+
   },
   methods: {
     init() {
@@ -30,5 +38,6 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
+
 </style>

@@ -11,7 +11,7 @@
 }
 </script>
 
-<style>
+<style scoped>
 #content {
   background: #edf0f5;
   border-radius: 10px;
