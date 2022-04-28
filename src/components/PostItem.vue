@@ -2,8 +2,7 @@
   <li class="post-item ">
     <div class="post-item-container">
       <div class="post-item-thumbnail">
-        <router-link to="/article"
-           target="_blank"><img src="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
+        <router-link to="/article"><img src="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
                data-original="https://s3.bmp.ovh/imgs/2022/04/22/b56bcc80f11a39ee.jpg"
                class="thumbnail"
                width="480"
@@ -16,9 +15,8 @@
       </div>
       <div class="post-item-main">
         <h2>
-          <a href="#"
-             target="_blank"
-             style="">{{title}}</a>
+          <router-link to="/article"
+             style="">{{title}}</router-link>
         </h2>
         <div class="post-item-content">
           {{description}}
