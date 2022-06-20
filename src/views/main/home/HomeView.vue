@@ -1,6 +1,10 @@
 <script setup >
 import MainPage from '@/components/MainPage.vue'
 import ToDown from '@/components/icons/ToDown.vue'
+import { onMounted } from 'vue';
+onMounted(()=>{
+    window.alert("开发中ing");
+})
 </script>
 
 <template>

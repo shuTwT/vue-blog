@@ -12,6 +12,14 @@ const router = createRouter({
           component: ()=>import('@/views/main/home/HomeView.vue'),
       },
       {
+        path:'news',
+        component: ()=>import('@/views/main/news/NewsView.vue'),
+    },
+    {
+        path:'comments',
+        component: ()=>import('@/views/main/comments/CommentsView.vue'),
+    },
+      {
         path:'about',
         component: ()=>import('@/views/main/about/AboutView.vue'),
     }]

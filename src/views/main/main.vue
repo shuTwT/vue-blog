@@ -33,7 +33,7 @@ let scroll = () => {
     // 滚动条减去高度
     var scrollH = document.body.scrollTop || document.documentElement.scrollTop
     // 百分比
-    var result = (scrollH).toFixed(2)
+    var result = (scrollH/totalH*100).toFixed(2)
     console.log(result);
     document.getElementById('scrollbar').style.width = result + '%'
 }
