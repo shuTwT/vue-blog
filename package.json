@@ -15,7 +15,6 @@
     "@bytemd/vue-next": "^1.14.0",
     "axios": "^0.27.2",
     "bytemd": "^1.14.0",
-    "element-plus": "^2.2.0",
     "pinia": "^2.0.13",
     "remark-gemoji": "^7.0.1",
     "vue": "^3.2.25",

@@ -11,7 +11,7 @@
                 </nav>
             </div>
             <div class="wrap-end">
-                <a href="/admin">后台管理</a>
+                <RouterLink to="/admin">后台管理</RouterLink>
             </div>
         </header>
         <RouterView />

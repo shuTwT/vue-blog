@@ -1,12 +1,3 @@
-<script setup >
-import MainPage from '@/components/MainPage.vue'
-import ToDown from '@/components/icons/ToDown.vue'
-import { onMounted } from 'vue';
-onMounted(()=>{
-    window.alert("开发中ing");
-})
-</script>
-
 <template>
     <div class="container">
         <div class="headertop">
@@ -26,36 +17,29 @@ onMounted(()=>{
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/pre.png"></a>
                     </li>
 
-                    <li class="qq"><a href="" title="Initiate chat ?"
-                            class="shutterset"><img
+                    <li class="qq"><a href="" title="Initiate chat ?" class="shutterset"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/qq.png"></a>
                     </li>
 
-                    <li><a href="" target="_blank" class="social-bili shutterset"
-                            title="bilibili"><img
+                    <li><a href="" target="_blank" class="social-bili shutterset" title="bilibili"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/bilibili.png"></a>
                     </li>
-                    <li><a href="" target="_blank"
-                            class="social-wangyiyun shutterset" title="CloudMusic"><img
+                    <li><a href="" target="_blank" class="social-wangyiyun shutterset" title="CloudMusic"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/ncm.png"></a>
                     </li>
-                    <li><a href="" target="_blank" class="social-sina shutterset"
-                            title="sina"><img
+                    <li><a href="" target="_blank" class="social-sina shutterset" title="sina"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/weibo.png"></a>
                     </li>
-                    <li><a href="" target="_blank" class="social-github shutterset"
-                            title="github"><img
+                    <li><a href="" target="_blank" class="social-github shutterset" title="github"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/github.png"></a>
                     </li>
 
 
-                    <li><a href="" target="_blank"
-                            class="social-wangyiyun shutterset" title="Zhihu"><img
+                    <li><a href="" target="_blank" class="social-wangyiyun shutterset" title="Zhihu"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/zhihu.png"></a>
                     </li>
 
-                    <li><a href="" target="_blank" class="social-qzone shutterset"
-                            title="qzone"><img
+                    <li><a href="" target="_blank" class="social-qzone shutterset" title="qzone"><img
                                 src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/display_icon/muh2/qz.png"></a>
                     </li>
                     <li id="bg-next"> <a><img
@@ -69,6 +53,13 @@ onMounted(()=>{
         <MainPage></MainPage>
     </div>
 </template>
+
+<script setup >
+import MainPage from '@/components/MainPage.vue'
+import ToDown from '@/components/icons/ToDown.vue'
+</script>
+
+
 <style scoped>
 .header-info,
 .headertop {
@@ -77,6 +68,7 @@ onMounted(()=>{
     align-items: center;
     flex-direction: column;
 }
+
 .headertop::before {
     background-image: url(https://i.bmp.ovh/imgs/2022/04/29/106abd19d738eea3.png);
 }
@@ -130,7 +122,8 @@ body.dark .top-links img {
 }
 
 
-.headertop, .pattern-center {
+.headertop,
+.pattern-center {
     animation: header 1s;
 }
 </style>
