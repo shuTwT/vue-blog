@@ -24,7 +24,7 @@ export default {
             <div class="hr"></div>
         </div>
         <div class="blog-list">
-            <div v-for="(item,index) in 6" :key="index" class="blog-item">
+            <div v-for="(item, index) in 6" :key="index" class="blog-item">
                 <div class="title"><a href="/article/2022/6/1/Java基础" class="">Java基础</a>
                 </div>
                 <div class="abstract">
@@ -46,6 +46,9 @@ export default {
 
 <style scoped>
 #page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -56,6 +59,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #cardbox {
@@ -64,13 +68,13 @@ export default {
 
 #primary>.title {
     width: 100%;
-    margin-left: 200px;
+    margin-left: 50px;
     padding-left: 5%;
     font-size: larger;
 }
 
 .hr {
-    width: 80%;
+    width: 100%;
     height: 3px;
     border-radius: 120px;
     background-color: #808080
@@ -90,6 +94,7 @@ export default {
     box-sizing: border-box;
     transition: all .3s;
 }
+
 .blog-item:hover {
     box-shadow: 0 4px 20px 0 rgb(0 0 0 / 20%);
 }
@@ -112,14 +117,17 @@ export default {
     border-left-style: solid;
     margin: 1rem 0;
 }
+
 .iconfont {
     font-size: .9rem;
     color: #888;
 }
+
 .iconfont {
     display: inline-block;
     line-height: 1.5rem;
 }
+
 .iconfont span {
     margin-left: 0.5rem;
 }
