@@ -3,14 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "build doc": "node build.js",
-        "preview": "vite preview"
-    },
     "dependencies": {
-        "@types/node": "^18.11.9",
         "axios": "^0.27.2",
         "pinia": "^2.0.13",
         "sass": "^1.56.0",
