@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-const root = 'doc_src'
+const root = 'packages/doc_src'
 
 const getAll = function (level, dir) {
     var filesNameArr = []
@@ -54,7 +54,7 @@ const getAll = function (level, dir) {
 const data = getAll(3, root)
 const output = {}
 output['docmap'] = data[0]['children']
-fs.writeFile('../docmap.json', JSON.stringify(output), (err) => {
+fs.writeFile('docmap.json', JSON.stringify(output), (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
 })
