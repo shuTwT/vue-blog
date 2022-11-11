@@ -6,6 +6,7 @@ import ViewController from './controllers/view';
 
 const router = new Router();
 router.get('/', ViewController.indexView)
+router.get('/api/getmd', ViewController.getmd)
 // auth 相关的路由
 router.post('/auth/login', AuthController.login);
 router.post('/auth/register', AuthController.register);
