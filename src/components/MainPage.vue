@@ -1,22 +1,3 @@
-<script  >
-import axios from 'axios'
-
-export default {
-    data () {
-        return {
-
-        }
-    },
-    components: {
-
-    },
-    methods: {},
-    mounted () {
-
-    }
-}
-</script>
-
 <template>
     <div id="page" class="container">
         <div id="primary">
@@ -43,6 +24,9 @@ export default {
         </div>
     </div>
 </template>
+
+<script lang="ts" setup>
+</script>
 
 <style scoped>
 #page {

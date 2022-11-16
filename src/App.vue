@@ -16,7 +16,7 @@
 </template>
 
 
-<script setup>
+<script lang="ts" setup>
 import MyFooter from '@/components/MyFooter.vue'
 import { RouterLink, RouterView } from "vue-router";
 
