@@ -8,16 +8,18 @@ const router = createRouter({
             component: () => import('@/views/home/HomeView.vue'),
         },
         {
-            path: '/news',
-            component: () => import('@/views/news/NewsView.vue'),
-        },
-        {
-            path: '/comments',
-            component: () => import('@/views/comments/CommentsView.vue'),
-        },
-        {
             path: '/about',
             component: () => import('@/views/about/AboutView.vue'),
+        },
+        {
+            path: '/article/:year/:month/:day/:id',
+            beforeEnter: (to, from, next) => {
+                // if (to.params.year) {
+                //     to.meta.year = to.params.year
+                // }
+                next()
+            },
+            component: () => import('@/views/article.vue'),
         }
     ],
 });

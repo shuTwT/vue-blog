@@ -4,8 +4,6 @@
             <div class="wrapper">
                 <nav>
                     <RouterLink to="/">首页</RouterLink>
-                    <RouterLink to="/news">新闻</RouterLink>
-                    <RouterLink to="/comments">心情</RouterLink>
                     <RouterLink to="/about">关于</RouterLink>
                 </nav>
             </div>
@@ -19,7 +17,6 @@
 <script lang="ts" setup>
 import MyFooter from '@/components/MyFooter.vue'
 import { RouterLink, RouterView } from "vue-router";
-
 </script>
 
 

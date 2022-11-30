@@ -54,9 +54,10 @@
     </div>
 </template>
 
-<script setup >
+<script lang="ts" setup >
 import MainPage from '@/components/MainPage.vue'
 import ToDown from '@/components/icons/ToDown.vue'
+
 </script>
 
 
